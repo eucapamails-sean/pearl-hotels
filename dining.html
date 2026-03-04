@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dining at Pearl Group — 14 restaurants across 10 properties, from Michelin-starred kaiseki to barefoot beachfront grills.">
+  <title>Dining | Pearl Group Hotels & Resorts</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pearl: '#FAF9F6',
+            obsidian: '#0D0D0D',
+            champagne: '#C9A96E',
+            ocean: '#3D5A6E',
+            sand: '#D4C5A9',
+            blush: '#E8DDD3'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Outfit', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <div class="container">
+      <div class="utility-bar-left">
+        <a href="tel:+97145558800">
+          <span>+971 4 555 8800</span>
+        </a>
+        <a href="mailto:reservations@pearlgroup.com">
+          <span>reservations@pearlgroup.com</span>
+        </a>
+        <a href="pearl-circle.html">Pearl Circle Login</a>
+      </div>
+      <div class="utility-bar-right">
+        <div class="lang-selector">
+          <a href="#" class="active">EN</a>
+          <a href="#">AR</a>
+          <a href="#">FR</a>
+          <a href="#">中文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-main">PEARL</div>
+        <div class="nav-logo-sub">Hotels & Resorts</div>
+      </a>
+      
+      <div class="nav-links">
+        <a href="destinations.html">Destinations</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="dining.html" class="active">Dining</a>
+        <a href="pearl-circle.html">Pearl Circle</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="destinations.html">Destinations</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="dining.html">Dining</a>
+    <a href="pearl-circle.html">Pearl Circle</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-menu-social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80');">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+      <div class="page-header-content">
+        <h1>Every Meal, a Destination</h1>
+        <div class="gold-divider gold-divider-left"></div>
+        <p style="color: var(--color-pearl); font-size: 1.125rem; max-width: 600px; opacity: 0.9;">14 restaurants across 10 properties. From Michelin-starred kaiseki to barefoot beachfront grills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurant Showcase -->
+  <section class="section" style="background-color: var(--color-pearl);">
+    <div class="container">
+      
+      <!-- Pearl Dubai -->
+      <div class="property-dining-section animate-on-scroll">
+        <h2 class="property-dining-title">Pearl Dubai</h2>
+        <div class="gold-divider gold-divider-left" style="margin-bottom: var(--space-lg);"></div>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80" alt="Nūr restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Nūr</h3>
+            <p class="restaurant-property">Pearl Dubai</p>
+            <p class="restaurant-cuisine">Modern Emirati</p>
+            <p class="restaurant-signature"><em>"Slow-roasted lamb shoulder with date molasses and saffron rice"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$$</span>
+              <span class="restaurant-hours">Dinner only, 6:30–10:30pm</span>
+            </div>
+            <p class="restaurant-note">Reservations required</p>
+          </div>
+        </article>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=800&q=80" alt="The Deck restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>The Deck</h3>
+            <p class="restaurant-property">Pearl Dubai</p>
+            <p class="restaurant-cuisine">International/Grill</p>
+            <p class="restaurant-signature"><em>"Wagyu tomahawk over mesquite"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$</span>
+              <span class="restaurant-hours">Lunch & dinner</span>
+            </div>
+            <p class="restaurant-note">Walk-ins welcome</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pearl Santorini -->
+      <div class="property-dining-section animate-on-scroll">
+        <h2 class="property-dining-title">Pearl Santorini</h2>
+        <div class="gold-divider gold-divider-left" style="margin-bottom: var(--space-lg);"></div>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1533106958155-d2d7069fbd94?w=800&q=80" alt="Petra restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Petra</h3>
+            <p class="restaurant-property">Pearl Santorini</p>
+            <p class="restaurant-cuisine">Greek-Mediterranean</p>
+            <p class="restaurant-signature"><em>"Santorini fava with caper leaves, grilled octopus, and 25-year balsamic"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$$</span>
+              <span class="restaurant-hours">Dinner only</span>
+            </div>
+            <p class="restaurant-note">Reservations essential</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pearl Kyoto -->
+      <div class="property-dining-section animate-on-scroll">
+        <h2 class="property-dining-title">Pearl Kyoto</h2>
+        <div class="gold-divider gold-divider-left" style="margin-bottom: var(--space-lg);"></div>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1579027989536-b7b1f875659b?w=800&q=80" alt="Hikari restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Hikari</h3>
+            <p class="restaurant-property">Pearl Kyoto</p>
+            <p class="restaurant-cuisine">Kaiseki/Omakase</p>
+            <p class="restaurant-signature"><em>"12-course seasonal omakase (menu changes daily)"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$$</span>
+              <span class="restaurant-hours">Dinner only, 7pm seating</span>
+            </div>
+            <p class="restaurant-note">Advance booking required (often 2 months)</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pearl Marrakech -->
+      <div class="property-dining-section animate-on-scroll">
+        <h2 class="property-dining-title">Pearl Marrakech</h2>
+        <div class="gold-divider gold-divider-left" style="margin-bottom: var(--space-lg);"></div>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=80" alt="Le Jardin restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Le Jardin</h3>
+            <p class="restaurant-property">Pearl Marrakech</p>
+            <p class="restaurant-cuisine">Moroccan-French</p>
+            <p class="restaurant-signature"><em>"Pigeon pastilla with cinnamon, almond, and orange blossom"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$</span>
+              <span class="restaurant-hours">Lunch & dinner</span>
+            </div>
+            <p class="restaurant-note">Rooftop terrace</p>
+          </div>
+        </article>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80" alt="Dar Zellij restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Dar Zellij</h3>
+            <p class="restaurant-property">Pearl Marrakech</p>
+            <p class="restaurant-cuisine">Traditional Moroccan</p>
+            <p class="restaurant-signature"><em>"7-vegetable couscous (Friday only, by tradition)"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$</span>
+              <span class="restaurant-hours">Lunch only Fri–Sun</span>
+            </div>
+            <p class="restaurant-note">Traditional Friday couscous</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pearl Maldives -->
+      <div class="property-dining-section animate-on-scroll">
+        <h2 class="property-dining-title">Pearl Maldives</h2>
+        <div class="gold-divider gold-divider-left" style="margin-bottom: var(--space-lg);"></div>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Below restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Below</h3>
+            <p class="restaurant-property">Pearl Maldives</p>
+            <p class="restaurant-cuisine">Underwater Fine Dining</p>
+            <p class="restaurant-signature"><em>"Maldivian lobster with coconut and curry leaf"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$$</span>
+              <span class="restaurant-hours">Dinner only, 12 seats</span>
+            </div>
+            <p class="restaurant-note">Book months ahead</p>
+          </div>
+        </article>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80" alt="Barefoot restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Barefoot</h3>
+            <p class="restaurant-property">Pearl Maldives</p>
+            <p class="restaurant-cuisine">Seafood/Grill</p>
+            <p class="restaurant-signature"><em>"Catch-of-the-day grilled whole, chosen by you at the fish market"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$</span>
+              <span class="restaurant-hours">Lunch & dinner</span>
+            </div>
+            <p class="restaurant-note">Sand-floor dining</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pearl Patagonia -->
+      <div class="property-dining-section animate-on-scroll">
+        <h2 class="property-dining-title">Pearl Patagonia</h2>
+        <div class="gold-divider gold-divider-left" style="margin-bottom: var(--space-lg);"></div>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Fuegos restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Fuegos</h3>
+            <p class="restaurant-property">Pearl Patagonia</p>
+            <p class="restaurant-cuisine">Patagonian/Open Fire</p>
+            <p class="restaurant-signature"><em>"Whole lamb asado, 8 hours over native lenga wood"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$</span>
+              <span class="restaurant-hours">Dinner only</span>
+            </div>
+            <p class="restaurant-note">All guests, communal table option</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pearl Amalfi -->
+      <div class="property-dining-section animate-on-scroll">
+        <h2 class="property-dining-title">Pearl Amalfi</h2>
+        <div class="gold-divider gold-divider-left" style="margin-bottom: var(--space-lg);"></div>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Terrazza restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Terrazza</h3>
+            <p class="restaurant-property">Pearl Amalfi</p>
+            <p class="restaurant-cuisine">Italian Fine Dining</p>
+            <p class="restaurant-signature"><em>"Handmade scialatielli with Amalfi lemon, prawns, and zucchini flowers"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$$</span>
+              <span class="restaurant-hours">Dinner only</span>
+            </div>
+            <p class="restaurant-note">Terrace overlooking coast</p>
+          </div>
+        </article>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&q=80" alt="Giardino restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Giardino</h3>
+            <p class="restaurant-property">Pearl Amalfi</p>
+            <p class="restaurant-cuisine">Casual Italian</p>
+            <p class="restaurant-signature"><em>"Wood-fired pizza margherita with San Marzano and buffalo mozzarella"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$</span>
+              <span class="restaurant-hours">All day</span>
+            </div>
+            <p class="restaurant-note">Pool adjacent</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pearl Cape Town -->
+      <div class="property-dining-section animate-on-scroll">
+        <h2 class="property-dining-title">Pearl Cape Town</h2>
+        <div class="gold-divider gold-divider-left" style="margin-bottom: var(--space-lg);"></div>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80" alt="Tableview restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Tableview</h3>
+            <p class="restaurant-property">Pearl Cape Town</p>
+            <p class="restaurant-cuisine">Contemporary South African</p>
+            <p class="restaurant-signature"><em>"Springbok loin with biltong crumb, chakalaka purée, and mealie pap crisp"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$$</span>
+              <span class="restaurant-hours">Dinner only</span>
+            </div>
+            <p class="restaurant-note">Reservations recommended</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pearl Rajasthan -->
+      <div class="property-dining-section animate-on-scroll">
+        <h2 class="property-dining-title">Pearl Rajasthan</h2>
+        <div class="gold-divider gold-divider-left" style="margin-bottom: var(--space-lg);"></div>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=800&q=80" alt="Sheesh Mahal restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Sheesh Mahal</h3>
+            <p class="restaurant-property">Pearl Rajasthan</p>
+            <p class="restaurant-cuisine">North Indian Fine Dining</p>
+            <p class="restaurant-signature"><em>"Laal maas (Rajasthani red mutton curry) with hand-pressed roomali roti"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$$</span>
+              <span class="restaurant-hours">Dinner only</span>
+            </div>
+            <p class="restaurant-note">Palace courtyard setting</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pearl Tulum -->
+      <div class="property-dining-section animate-on-scroll">
+        <h2 class="property-dining-title">Pearl Tulum</h2>
+        <div class="gold-divider gold-divider-left" style="margin-bottom: var(--space-lg);"></div>
+        
+        <article class="restaurant-card">
+          <div class="restaurant-image">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Milpa restaurant">
+          </div>
+          <div class="restaurant-details">
+            <h3>Milpa</h3>
+            <p class="restaurant-property">Pearl Tulum</p>
+            <p class="restaurant-cuisine">Farm-to-Table Mexican</p>
+            <p class="restaurant-signature"><em>"Cochinita pibil slow-roasted in banana leaf with habanero salsa and handmade tortillas"</em></p>
+            <div class="restaurant-meta">
+              <span class="restaurant-price">$$</span>
+              <span class="restaurant-hours">Lunch & dinner</span>
+            </div>
+            <p class="restaurant-note">Ingredients from on-site garden</p>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dietary & Philosophy Section -->
+  <section class="section" style="background-color: var(--color-sand);">
+    <div class="container">
+      <div class="philosophy-content animate-on-scroll">
+        <div class="gold-divider" style="margin-bottom: var(--space-md);"></div>
+        <blockquote class="philosophy-quote">
+          "Our kitchens operate on three principles: source locally, waste nothing, respect tradition."
+        </blockquote>
+        <p class="philosophy-note">Every Pearl restaurant accommodates vegetarian, vegan, gluten-free, halal, and kosher requirements. Please inform us at booking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>PEARL</h3>
+          <p>Where the world feels like home. Experience luxury across 10 exceptional properties on 4 continents.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="destinations.html#pearl-dubai">Pearl Dubai</a></li>
+            <li><a href="destinations.html#pearl-santorini">Pearl Santorini</a></li>
+            <li><a href="destinations.html#pearl-kyoto">Pearl Kyoto</a></li>
+            <li><a href="destinations.html#pearl-marrakech">Pearl Marrakech</a></li>
+            <li><a href="destinations.html#pearl-maldives">Pearl Maldives</a></li>
+            <li><a href="destinations.html#pearl-patagonia">Pearl Patagonia</a></li>
+            <li><a href="destinations.html#pearl-amalfi">Pearl Amalfi</a></li>
+            <li><a href="destinations.html#pearl-capetown">Pearl Cape Town</a></li>
+            <li><a href="destinations.html#pearl-rajasthan">Pearl Rajasthan</a></li>
+            <li><a href="destinations.html#pearl-tulum">Pearl Tulum</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Guest Services</h4>
+          <ul>
+            <li><a href="pearl-circle.html">Pearl Circle</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size: 0.875rem; opacity: 0.7; margin-bottom: 1rem;">Receive Pearl Perspectives — our curated journal of travel stories, design insights, and exclusive offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-success">Thank you for subscribing.</p>
+          <p class="newsletter-error"></p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2024 Pearl Group Hotels & Resorts. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous">‹</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next">›</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-image">
+    </div>
+  </div>
+  
+  <!-- Additional Styles -->
+  <style>
+    .property-dining-section {
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--color-sand);
+    }
+    
+    .property-dining-section:last-of-type {
+      border-bottom: none;
+    }
+    
+    .property-dining-title {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      color: var(--color-obsidian);
+      margin-bottom: 0;
+    }
+    
+    .restaurant-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-lg);
+      align-items: center;
+    }
+    
+    @media (max-width: 768px) {
+      .restaurant-card {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .restaurant-image {
+      aspect-ratio: 16/10;
+      overflow: hidden;
+    }
+    
+    .restaurant-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+    
+    .restaurant-card:hover .restaurant-image img {
+      transform: scale(1.03);
+    }
+    
+    .restaurant-details h3 {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      color: var(--color-obsidian);
+      margin-bottom: 0.25rem;
+    }
+    
+    .restaurant-property {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-ocean);
+      margin-bottom: 0.5rem;
+    }
+    
+    .restaurant-cuisine {
+      font-size: 0.875rem;
+      color: var(--color-obsidian);
+      opacity: 0.7;
+      margin-bottom: 0.75rem;
+    }
+    
+    .restaurant-signature {
+      font-family: var(--font-serif);
+      font-size: 1.125rem;
+      font-style: italic;
+      color: var(--color-obsidian);
+      margin-bottom: var(--space-sm);
+      line-height: 1.5;
+    }
+    
+    .restaurant-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-top: 1px solid var(--color-sand);
+      border-bottom: 1px solid var(--color-sand);
+      margin-bottom: 0.5rem;
+    }
+    
+    .restaurant-price {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--color-champagne);
+    }
+    
+    .restaurant-hours {
+      font-size: 0.8125rem;
+      color: var(--color-obsidian);
+      opacity: 0.8;
+    }
+    
+    .restaurant-note {
+      font-size: 0.8125rem;
+      color: var(--color-ocean);
+    }
+    
+    .philosophy-content {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .philosophy-quote {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--color-obsidian);
+      margin-bottom: var(--space-md);
+    }
+    
+    .philosophy-note {
+      font-size: 0.9375rem;
+      color: var(--color-ocean);
+    }
+  </style>
+  
+  <script src="main.js"></script>
+</body>
+</html>

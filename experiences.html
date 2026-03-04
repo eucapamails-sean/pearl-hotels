@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover extraordinary experiences at Pearl Group properties — from hot air balloons over Dubai to temple walks in Kyoto.">
+  <title>Experiences | Pearl Group Hotels & Resorts</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pearl: '#FAF9F6',
+            obsidian: '#0D0D0D',
+            champagne: '#C9A96E',
+            ocean: '#3D5A6E',
+            sand: '#D4C5A9',
+            blush: '#E8DDD3'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Outfit', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <div class="container">
+      <div class="utility-bar-left">
+        <a href="tel:+97145558800">
+          <span>+971 4 555 8800</span>
+        </a>
+        <a href="mailto:reservations@pearlgroup.com">
+          <span>reservations@pearlgroup.com</span>
+        </a>
+        <a href="pearl-circle.html">Pearl Circle Login</a>
+      </div>
+      <div class="utility-bar-right">
+        <div class="lang-selector">
+          <a href="#" class="active">EN</a>
+          <a href="#">AR</a>
+          <a href="#">FR</a>
+          <a href="#">中文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-main">PEARL</div>
+        <div class="nav-logo-sub">Hotels & Resorts</div>
+      </a>
+      
+      <div class="nav-links">
+        <a href="destinations.html">Destinations</a>
+        <a href="experiences.html" class="active">Experiences</a>
+        <a href="dining.html">Dining</a>
+        <a href="pearl-circle.html">Pearl Circle</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="destinations.html">Destinations</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="dining.html">Dining</a>
+    <a href="pearl-circle.html">Pearl Circle</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-menu-social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1920&q=80');">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+      <div class="page-header-content">
+        <h1>Beyond the Room</h1>
+        <div class="gold-divider gold-divider-left"></div>
+        <p style="color: var(--color-pearl); font-size: 1.125rem; max-width: 600px; opacity: 0.9;">The places we take you. The things we show you. The moments that become the reason you came.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Filter -->
+  <div class="filter-bar-container" style="background-color: var(--color-pearl); border-bottom: 1px solid var(--color-sand); position: sticky; top: 60px; z-index: 100;">
+    <div class="container" style="padding-top: 1rem; padding-bottom: 1rem;">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="culinary">Culinary</button>
+        <button class="filter-btn" data-filter="adventure">Adventure</button>
+        <button class="filter-btn" data-filter="wellness">Wellness</button>
+        <button class="filter-btn" data-filter="culture">Culture</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experiences Content -->
+  <section class="section" style="background-color: var(--color-pearl);">
+    <div class="container">
+      <div class="experiences-grid" data-gallery>
+        
+        <!-- Experience 1: Desert Dawn Balloon Flight -->
+        <article class="experience-detail-card animate-on-scroll" data-category="adventure">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Desert Dawn Balloon Flight" loading="lazy">
+            <span class="experience-tag">Adventure</span>
+          </div>
+          <div class="experience-content">
+            <h3>Desert Dawn Balloon Flight</h3>
+            <p class="experience-property">Pearl Dubai</p>
+            <p class="experience-description">Rise above the Arabian desert in a private hot air balloon at sunrise. Land in a Bedouin-style camp for a champagne breakfast cooked over open fire.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">4 hours</span>
+              <span class="experience-price">$$$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 2: Omakase at Hikari -->
+        <article class="experience-detail-card animate-on-scroll" data-category="culinary">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1579027989536-b7b1f875659b?w=800&q=80" alt="Omakase at Hikari" loading="lazy">
+            <span class="experience-tag">Culinary</span>
+          </div>
+          <div class="experience-content">
+            <h3>Omakase at Hikari</h3>
+            <p class="experience-property">Pearl Kyoto</p>
+            <p class="experience-description">A 12-course seasonal omakase dinner in a 200-year-old restored machiya townhouse. Chef Takeda sources every ingredient within 50km of Kyoto.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">2.5 hours</span>
+              <span class="experience-price">$$$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 3: Caldera Sunset Sail -->
+        <article class="experience-detail-card animate-on-scroll" data-category="adventure,nature">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1533106958155-d2d7069fbd94?w=800&q=80" alt="Caldera Sunset Sail" loading="lazy">
+            <span class="experience-tag">Adventure</span>
+          </div>
+          <div class="experience-content">
+            <h3>Caldera Sunset Sail</h3>
+            <p class="experience-property">Pearl Santorini</p>
+            <p class="experience-description">Private catamaran cruise along the caldera. Swim in volcanic hot springs. Watch the famous Oia sunset from the water with a glass of Assyrtiko.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">5 hours</span>
+              <span class="experience-price">$$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 4: Patagonia Ice Trek -->
+        <article class="experience-detail-card animate-on-scroll" data-category="adventure">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=800&q=80" alt="Patagonia Ice Trek" loading="lazy">
+            <span class="experience-tag">Adventure</span>
+          </div>
+          <div class="experience-content">
+            <h3>Patagonia Ice Trek</h3>
+            <p class="experience-property">Pearl Patagonia</p>
+            <p class="experience-description">Guided trek across Grey Glacier with crampons and ice axes. Walk on ice that formed 10,000 years ago. Return to the lodge for whiskey on glacial ice.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">8 hours</span>
+              <span class="experience-price">$$$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 5: Spice Souk Immersion -->
+        <article class="experience-detail-card animate-on-scroll" data-category="culture">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800&q=80" alt="Spice Souk Immersion" loading="lazy">
+            <span class="experience-tag">Culture</span>
+          </div>
+          <div class="experience-content">
+            <h3>Spice Souk Immersion</h3>
+            <p class="experience-property">Pearl Marrakech</p>
+            <p class="experience-description">Navigate the medina with a private guide who grew up in these alleys. Visit spice merchants, leather tanners, and a hidden ceramic workshop. End with a rooftop tea ceremony.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">4 hours</span>
+              <span class="experience-price">$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 6: Underwater Dining -->
+        <article class="experience-detail-card animate-on-scroll" data-category="culinary">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Underwater Dining" loading="lazy">
+            <span class="experience-tag">Culinary</span>
+          </div>
+          <div class="experience-content">
+            <h3>Underwater Dining</h3>
+            <p class="experience-property">Pearl Maldives</p>
+            <p class="experience-description">Twelve seats. Five meters below the surface. Seven courses paired with wines selected to complement the reef fish swimming past your table.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">3 hours</span>
+              <span class="experience-price">$$$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 7: Ayurvedic Reset -->
+        <article class="experience-detail-card animate-on-scroll" data-category="wellness">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80" alt="Ayurvedic Reset" loading="lazy">
+            <span class="experience-tag">Wellness</span>
+          </div>
+          <div class="experience-content">
+            <h3>Ayurvedic Reset</h3>
+            <p class="experience-property">Pearl Rajasthan</p>
+            <p class="experience-description">A three-day Ayurvedic program designed by the palace vaidya. Personalized dosha assessment, daily treatments, yoga at sunrise on the lake, and a sattvic meal plan.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">3 days</span>
+              <span class="experience-price">$$$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 8: Cenote Ceremony -->
+        <article class="experience-detail-card animate-on-scroll" data-category="wellness,culture">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80" alt="Cenote Ceremony" loading="lazy">
+            <span class="experience-tag">Wellness</span>
+          </div>
+          <div class="experience-content">
+            <h3>Cenote Ceremony</h3>
+            <p class="experience-property">Pearl Tulum</p>
+            <p class="experience-description">Descend into a private cenote at dawn. Guided breathwork and sound healing in a space the Maya considered sacred. Followed by a plant-based breakfast.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">3 hours</span>
+              <span class="experience-price">$$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 9: Wine & Whales -->
+        <article class="experience-detail-card animate-on-scroll" data-category="nature,culinary">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="Wine & Whales" loading="lazy">
+            <span class="experience-tag">Nature</span>
+          </div>
+          <div class="experience-content">
+            <h3>Wine & Whales</h3>
+            <p class="experience-property">Pearl Cape Town</p>
+            <p class="experience-description">Morning whale watching from Hermanus cliffs (June–November), followed by a private tasting at Groot Constantia — the oldest wine estate in South Africa.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">6 hours</span>
+              <span class="experience-price">$$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 10: Amalfi Lemon Harvest -->
+        <article class="experience-detail-card animate-on-scroll" data-category="culinary,culture">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800&q=80" alt="Amalfi Lemon Harvest" loading="lazy">
+            <span class="experience-tag">Culinary</span>
+          </div>
+          <div class="experience-content">
+            <h3>Amalfi Lemon Harvest</h3>
+            <p class="experience-property">Pearl Amalfi</p>
+            <p class="experience-description">Join the Ravello lemon farmers for a morning harvest. Learn to make limoncello, sfogliatelle, and lemon risotto. Take home a bottle of your own blend.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">5 hours</span>
+              <span class="experience-price">$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 11: Temple Dawn Walk -->
+        <article class="experience-detail-card animate-on-scroll" data-category="culture">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80" alt="Temple Dawn Walk" loading="lazy">
+            <span class="experience-tag">Culture</span>
+          </div>
+          <div class="experience-content">
+            <h3>Temple Dawn Walk</h3>
+            <p class="experience-property">Pearl Kyoto</p>
+            <p class="experience-description">Visit three Higashiyama temples before they open to the public. A monk-guided meditation at Nanzen-ji. Matcha and wagashi in a private garden.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">3 hours</span>
+              <span class="experience-price">$$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+        <!-- Experience 12: Atlas Mountain Day Trek -->
+        <article class="experience-detail-card animate-on-scroll" data-category="adventure">
+          <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Atlas Mountain Day Trek" loading="lazy">
+            <span class="experience-tag">Adventure</span>
+          </div>
+          <div class="experience-content">
+            <h3>Atlas Mountain Day Trek</h3>
+            <p class="experience-property">Pearl Marrakech</p>
+            <p class="experience-description">Drive into the High Atlas. Trek through Berber villages. Lunch with a local family. Return through the Ourika Valley at golden hour.</p>
+            <div class="experience-meta">
+              <span class="experience-duration">10 hours</span>
+              <span class="experience-price">$</span>
+            </div>
+            <a href="#" class="experience-link">Learn More →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>PEARL</h3>
+          <p>Where the world feels like home. Experience luxury across 10 exceptional properties on 4 continents.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="destinations.html#pearl-dubai">Pearl Dubai</a></li>
+            <li><a href="destinations.html#pearl-santorini">Pearl Santorini</a></li>
+            <li><a href="destinations.html#pearl-kyoto">Pearl Kyoto</a></li>
+            <li><a href="destinations.html#pearl-marrakech">Pearl Marrakech</a></li>
+            <li><a href="destinations.html#pearl-maldives">Pearl Maldives</a></li>
+            <li><a href="destinations.html#pearl-patagonia">Pearl Patagonia</a></li>
+            <li><a href="destinations.html#pearl-amalfi">Pearl Amalfi</a></li>
+            <li><a href="destinations.html#pearl-capetown">Pearl Cape Town</a></li>
+            <li><a href="destinations.html#pearl-rajasthan">Pearl Rajasthan</a></li>
+            <li><a href="destinations.html#pearl-tulum">Pearl Tulum</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Guest Services</h4>
+          <ul>
+            <li><a href="pearl-circle.html">Pearl Circle</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size: 0.875rem; opacity: 0.7; margin-bottom: 1rem;">Receive Pearl Perspectives — our curated journal of travel stories, design insights, and exclusive offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-success">Thank you for subscribing.</p>
+          <p class="newsletter-error"></p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2024 Pearl Group Hotels & Resorts. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous">‹</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next">›</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-image">
+    </div>
+  </div>
+  
+  <!-- Additional Styles -->
+  <style>
+    .experiences-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-lg);
+    }
+    
+    @media (max-width: 1024px) {
+      .experiences-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .experiences-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .experience-detail-card {
+      background-color: var(--color-pearl);
+    }
+    
+    .experience-image {
+      position: relative;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      margin-bottom: var(--space-sm);
+    }
+    
+    .experience-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+    
+    .experience-detail-card:hover .experience-image img {
+      transform: scale(1.05);
+    }
+    
+    .experience-tag {
+      position: absolute;
+      top: var(--space-sm);
+      left: var(--space-sm);
+      font-size: 0.625rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      background-color: var(--color-champagne);
+      color: var(--color-obsidian);
+    }
+    
+    .experience-content h3 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--color-obsidian);
+      margin-bottom: 0.25rem;
+    }
+    
+    .experience-property {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-champagne);
+      margin-bottom: 0.75rem;
+    }
+    
+    .experience-description {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--color-obsidian);
+      opacity: 0.8;
+      margin-bottom: var(--space-sm);
+    }
+    
+    .experience-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-top: 1px solid var(--color-sand);
+      border-bottom: 1px solid var(--color-sand);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .experience-duration {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-ocean);
+    }
+    
+    .experience-price {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--color-champagne);
+    }
+    
+    .experience-link {
+      font-size: 0.8125rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-obsidian);
+      transition: color var(--transition-base);
+    }
+    
+    .experience-link:hover {
+      color: var(--color-champagne);
+    }
+  </style>
+  
+  <script src="main.js"></script>
+</body>
+</html>

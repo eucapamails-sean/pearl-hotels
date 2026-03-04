@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pearl Circle — Our loyalty program reimagined. From your first stay, you're known.">
+  <title>Pearl Circle | Pearl Group Hotels & Resorts</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pearl: '#FAF9F6',
+            obsidian: '#0D0D0D',
+            champagne: '#C9A96E',
+            ocean: '#3D5A6E',
+            sand: '#D4C5A9',
+            blush: '#E8DDD3'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Outfit', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <div class="container">
+      <div class="utility-bar-left">
+        <a href="tel:+97145558800">
+          <span>+971 4 555 8800</span>
+        </a>
+        <a href="mailto:reservations@pearlgroup.com">
+          <span>reservations@pearlgroup.com</span>
+        </a>
+        <a href="pearl-circle.html">Pearl Circle Login</a>
+      </div>
+      <div class="utility-bar-right">
+        <div class="lang-selector">
+          <a href="#" class="active">EN</a>
+          <a href="#">AR</a>
+          <a href="#">FR</a>
+          <a href="#">中文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-main">PEARL</div>
+        <div class="nav-logo-sub">Hotels & Resorts</div>
+      </a>
+      
+      <div class="nav-links">
+        <a href="destinations.html">Destinations</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="dining.html">Dining</a>
+        <a href="pearl-circle.html" class="active">Pearl Circle</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="destinations.html">Destinations</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="dining.html">Dining</a>
+    <a href="pearl-circle.html">Pearl Circle</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-menu-social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+
+  <!-- Page Hero with Gold Particles -->
+  <section class="page-header hero-particles" style="background-color: var(--color-obsidian); height: 50vh; min-height: 400px; display: flex; align-items: center; justify-content: center;">
+    <div class="page-header-overlay" style="display: none;"></div>
+    <div class="container">
+      <div class="page-header-content text-center">
+        <h1>Pearl Circle</h1>
+        <div class="gold-divider"></div>
+        <p style="color: var(--color-pearl); font-size: 1.125rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">Not a points program. A relationship.</p>
+      </div>
+    </div>
+    
+    <!-- Gold Particles -->
+    <div class="gold-particles">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="section" style="background-color: var(--color-pearl);">
+    <div class="container">
+      <div class="philosophy-content animate-on-scroll" style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <p style="font-family: var(--font-serif); font-size: 1.375rem; line-height: 1.8; color: var(--color-obsidian);">
+          We don't believe in making you collect points to earn our attention. From your first stay, you're known. Pearl Circle simply means the longer you stay with us, the more we can do for you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tier Comparison -->
+  <section class="section" style="background-color: var(--color-pearl);">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>Membership Tiers</h2>
+        <div class="gold-divider"></div>
+      </div>
+      
+      <div class="tier-grid">
+        <!-- Tier 1: Oyster -->
+        <div class="tier-card animate-on-scroll">
+          <div class="tier-accent" style="background-color: #C0C0C0;"></div>
+          <div class="tier-content">
+            <h3>Oyster</h3>
+            <p class="tier-qualification">Entry — automatic on first booking</p>
+            <ul class="tier-benefits">
+              <li>Complimentary WiFi</li>
+              <li>Welcome amenity</li>
+              <li>Pearl Journal delivered to room</li>
+              <li>Access to member rates</li>
+              <li>10% off spa treatments</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Tier 2: Nacre -->
+        <div class="tier-card animate-on-scroll">
+          <div class="tier-accent" style="background-color: #E8DDD3;"></div>
+          <div class="tier-content">
+            <h3>Nacre</h3>
+            <p class="tier-qualification">After 5 nights or 2 stays</p>
+            <p class="tier-includes">Includes all Oyster benefits PLUS:</p>
+            <ul class="tier-benefits">
+              <li>Room upgrade (subject to availability)</li>
+              <li>Late checkout until 2pm</li>
+              <li>Complimentary breakfast for two</li>
+              <li>Early access to experience bookings</li>
+              <li>Birthday amenity</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Tier 3: Lustré -->
+        <div class="tier-card animate-on-scroll">
+          <div class="tier-accent" style="background-color: #C9A96E;"></div>
+          <div class="tier-content">
+            <h3>Lustré</h3>
+            <p class="tier-qualification">After 15 nights or 6 stays</p>
+            <p class="tier-includes">Includes all Nacre benefits PLUS:</p>
+            <ul class="tier-benefits">
+              <li>Guaranteed upgrade (including suites)</li>
+              <li>4pm late checkout</li>
+              <li>Complimentary airport transfers</li>
+              <li>Dedicated Pearl Host at each property</li>
+              <li>Access to members-only experiences</li>
+              <li>Annual complimentary night</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Tier 4: Black Pearl -->
+        <div class="tier-card tier-card-premium animate-on-scroll">
+          <div class="tier-accent" style="background-color: #C9A96E;"></div>
+          <div class="tier-content">
+            <h3>Black Pearl</h3>
+            <p class="tier-qualification">By invitation only</p>
+            <p class="tier-includes">Includes all Lustré benefits PLUS:</p>
+            <ul class="tier-benefits">
+              <li>Guaranteed best available suite</li>
+              <li>No blackout dates</li>
+              <li>Private check-in</li>
+              <li>Personal travel curator (24/7)</li>
+              <li>Chef's table priority at all restaurants</li>
+              <li>Complimentary minibar</li>
+              <li>Invitation to annual Pearl Gala</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enrollment CTA -->
+  <section class="section" style="background-color: var(--color-blush);">
+    <div class="container">
+      <div class="enrollment-content animate-on-scroll" style="max-width: 500px; margin: 0 auto;">
+        <div class="section-title" style="margin-bottom: var(--space-md);">
+          <h2 style="font-size: 2rem;">Join Pearl Circle</h2>
+          <div class="gold-divider"></div>
+          <p style="font-size: 1rem; color: var(--color-obsidian); opacity: 0.8;">It takes 30 seconds and your first stay starts earning.</p>
+        </div>
+        
+        <form class="enrollment-form">
+          <div class="form-group">
+            <label for="enrollName">Full Name</label>
+            <input type="text" id="enrollName" name="name" required>
+            <span class="form-error">Please enter your name</span>
+          </div>
+          
+          <div class="form-group">
+            <label for="enrollEmail">Email Address</label>
+            <input type="email" id="enrollEmail" name="email" required>
+            <span class="form-error">Please enter a valid email address</span>
+          </div>
+          
+          <div class="form-group">
+            <label for="enrollCountry">Country</label>
+            <select id="enrollCountry" name="country" required>
+              <option value="">Select your country</option>
+              <option value="US">United States</option>
+              <option value="UK">United Kingdom</option>
+              <option value="AE">United Arab Emirates</option>
+              <option value="DE">Germany</option>
+              <option value="FR">France</option>
+              <option value="IT">Italy</option>
+              <option value="ES">Spain</option>
+              <option value="JP">Japan</option>
+              <option value="AU">Australia</option>
+              <option value="CA">Canada</option>
+              <option value="CH">Switzerland</option>
+              <option value="NL">Netherlands</option>
+              <option value="SE">Sweden</option>
+              <option value="SG">Singapore</option>
+              <option value="IN">India</option>
+              <option value="BR">Brazil</option>
+              <option value="MX">Mexico</option>
+              <option value="ZA">South Africa</option>
+              <option value="OTHER">Other</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="btn btn-champagne" style="width: 100%;">Join Now</button>
+        </form>
+        
+        <div class="form-success">
+          <p><strong>Welcome to Pearl Circle.</strong></p>
+          <p>Your Oyster status is active. We'll remember you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>PEARL</h3>
+          <p>Where the world feels like home. Experience luxury across 10 exceptional properties on 4 continents.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="destinations.html#pearl-dubai">Pearl Dubai</a></li>
+            <li><a href="destinations.html#pearl-santorini">Pearl Santorini</a></li>
+            <li><a href="destinations.html#pearl-kyoto">Pearl Kyoto</a></li>
+            <li><a href="destinations.html#pearl-marrakech">Pearl Marrakech</a></li>
+            <li><a href="destinations.html#pearl-maldives">Pearl Maldives</a></li>
+            <li><a href="destinations.html#pearl-patagonia">Pearl Patagonia</a></li>
+            <li><a href="destinations.html#pearl-amalfi">Pearl Amalfi</a></li>
+            <li><a href="destinations.html#pearl-capetown">Pearl Cape Town</a></li>
+            <li><a href="destinations.html#pearl-rajasthan">Pearl Rajasthan</a></li>
+            <li><a href="destinations.html#pearl-tulum">Pearl Tulum</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Guest Services</h4>
+          <ul>
+            <li><a href="pearl-circle.html">Pearl Circle</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size: 0.875rem; opacity: 0.7; margin-bottom: 1rem;">Receive Pearl Perspectives — our curated journal of travel stories, design insights, and exclusive offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-success">Thank you for subscribing.</p>
+          <p class="newsletter-error"></p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2024 Pearl Group Hotels & Resorts. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous">‹</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next">›</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-image">
+    </div>
+  </div>
+  
+  <!-- Additional Styles -->
+  <style>
+    /* Gold Particles Animation */
+    .gold-particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    
+    .gold-particles span {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background-color: var(--color-champagne);
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleFloat 8s infinite;
+    }
+    
+    .gold-particles span:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 8s; }
+    .gold-particles span:nth-child(2) { left: 20%; animation-delay: 1s; animation-duration: 10s; }
+    .gold-particles span:nth-child(3) { left: 30%; animation-delay: 2s; animation-duration: 7s; }
+    .gold-particles span:nth-child(4) { left: 40%; animation-delay: 0.5s; animation-duration: 9s; }
+    .gold-particles span:nth-child(5) { left: 50%; animation-delay: 1.5s; animation-duration: 11s; }
+    .gold-particles span:nth-child(6) { left: 60%; animation-delay: 2.5s; animation-duration: 8s; }
+    .gold-particles span:nth-child(7) { left: 70%; animation-delay: 0.8s; animation-duration: 12s; }
+    .gold-particles span:nth-child(8) { left: 80%; animation-delay: 1.8s; animation-duration: 9s; }
+    .gold-particles span:nth-child(9) { left: 90%; animation-delay: 3s; animation-duration: 7s; }
+    .gold-particles span:nth-child(10) { left: 15%; animation-delay: 0.3s; animation-duration: 10s; }
+    .gold-particles span:nth-child(11) { left: 25%; animation-delay: 1.2s; animation-duration: 8s; }
+    .gold-particles span:nth-child(12) { left: 35%; animation-delay: 2.2s; animation-duration: 11s; }
+    .gold-particles span:nth-child(13) { left: 45%; animation-delay: 0.7s; animation-duration: 9s; }
+    .gold-particles span:nth-child(14) { left: 55%; animation-delay: 1.7s; animation-duration: 10s; }
+    .gold-particles span:nth-child(15) { left: 65%; animation-delay: 2.7s; animation-duration: 8s; }
+    .gold-particles span:nth-child(16) { left: 75%; animation-delay: 0.4s; animation-duration: 12s; }
+    .gold-particles span:nth-child(17) { left: 85%; animation-delay: 1.4s; animation-duration: 9s; }
+    .gold-particles span:nth-child(18) { left: 95%; animation-delay: 2.4s; animation-duration: 7s; }
+    .gold-particles span:nth-child(19) { left: 5%; animation-delay: 3.2s; animation-duration: 11s; }
+    .gold-particles span:nth-child(20) { left: 35%; animation-delay: 1.1s; animation-duration: 8s; width: 3px; height: 3px; }
+    
+    @keyframes particleFloat {
+      0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.8;
+      }
+      90% {
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(-100px) scale(1);
+        opacity: 0;
+      }
+    }
+    
+    /* Tier Grid */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-md);
+    }
+    
+    @media (max-width: 1024px) {
+      .tier-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .tier-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .tier-card {
+      background-color: var(--color-pearl);
+      border: 1px solid var(--color-sand);
+      overflow: hidden;
+    }
+    
+    .tier-accent {
+      height: 4px;
+      width: 100%;
+    }
+    
+    .tier-content {
+      padding: var(--space-md);
+    }
+    
+    .tier-content h3 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--color-obsidian);
+      margin-bottom: 0.25rem;
+    }
+    
+    .tier-qualification {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-ocean);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .tier-includes {
+      font-size: 0.75rem;
+      color: var(--color-champagne);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--color-sand);
+    }
+    
+    .tier-benefits {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .tier-benefits li {
+      font-size: 0.875rem;
+      color: var(--color-obsidian);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(212, 197, 169, 0.3);
+      line-height: 1.4;
+    }
+    
+    .tier-benefits li:last-child {
+      border-bottom: none;
+    }
+    
+    /* Black Pearl Premium Card */
+    .tier-card-premium {
+      background-color: var(--color-obsidian);
+      border: 2px solid var(--color-champagne);
+    }
+    
+    .tier-card-premium .tier-content h3 {
+      color: var(--color-champagne);
+    }
+    
+    .tier-card-premium .tier-qualification {
+      color: var(--color-pearl);
+      opacity: 0.7;
+    }
+    
+    .tier-card-premium .tier-includes {
+      color: var(--color-champagne);
+      border-bottom-color: rgba(201, 169, 110, 0.3);
+    }
+    
+    .tier-card-premium .tier-benefits li {
+      color: var(--color-pearl);
+      border-bottom-color: rgba(201, 169, 110, 0.2);
+    }
+    
+    /* Enrollment Form */
+    .enrollment-form {
+      background-color: var(--color-pearl);
+      padding: var(--space-lg);
+    }
+    
+    .enrollment-form .form-group {
+      margin-bottom: var(--space-md);
+    }
+    
+    .enrollment-form label {
+      display: block;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      color: var(--color-ocean);
+    }
+    
+    .enrollment-form input,
+    .enrollment-form select {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid var(--color-sand);
+      background-color: var(--color-pearl);
+      font-size: 1rem;
+      font-family: var(--font-sans);
+      transition: border-color var(--transition-base);
+    }
+    
+    .enrollment-form input:focus,
+    .enrollment-form select:focus {
+      outline: none;
+      border-color: var(--color-champagne);
+    }
+    
+    .philosophy-content {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+  
+  <script src="main.js"></script>
+</body>
+</html>

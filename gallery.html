@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gallery — Explore Pearl Group properties through the lens. Architecture, rooms, dining, experiences, and landscapes.">
+  <title>Gallery | Pearl Group Hotels & Resorts</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pearl: '#FAF9F6',
+            obsidian: '#0D0D0D',
+            champagne: '#C9A96E',
+            ocean: '#3D5A6E',
+            sand: '#D4C5A9',
+            blush: '#E8DDD3'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Outfit', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <div class="container">
+      <div class="utility-bar-left">
+        <a href="tel:+97145558800">
+          <span>+971 4 555 8800</span>
+        </a>
+        <a href="mailto:reservations@pearlgroup.com">
+          <span>reservations@pearlgroup.com</span>
+        </a>
+        <a href="pearl-circle.html">Pearl Circle Login</a>
+      </div>
+      <div class="utility-bar-right">
+        <div class="lang-selector">
+          <a href="#" class="active">EN</a>
+          <a href="#">AR</a>
+          <a href="#">FR</a>
+          <a href="#">中文</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-main">PEARL</div>
+        <div class="nav-logo-sub">Hotels & Resorts</div>
+      </a>
+      
+      <div class="nav-links">
+        <a href="destinations.html">Destinations</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="dining.html">Dining</a>
+        <a href="pearl-circle.html">Pearl Circle</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="destinations.html">Destinations</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="dining.html">Dining</a>
+    <a href="pearl-circle.html">Pearl Circle</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-menu-social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920&q=80');">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+      <div class="page-header-content">
+        <h1>A Visual Journey</h1>
+        <div class="gold-divider gold-divider-left"></div>
+        <p style="color: var(--color-pearl); font-size: 1.125rem; max-width: 600px; opacity: 0.9;">Explore our properties through the lens.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Filters -->
+  <div class="filter-bar-container" style="background-color: var(--color-pearl); border-bottom: 1px solid var(--color-sand); position: sticky; top: 60px; z-index: 100;">
+    <div class="container" style="padding-top: 1rem; padding-bottom: 1rem;">
+      <!-- Property Filter -->
+      <div class="filter-bar" style="margin-bottom: 0.75rem;">
+        <span style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-ocean); margin-right: 1rem;">Property:</span>
+        <button class="filter-btn active" data-filter="all" data-filter-type="property">All Properties</button>
+        <button class="filter-btn" data-filter="dubai" data-filter-type="property">Pearl Dubai</button>
+        <button class="filter-btn" data-filter="santorini" data-filter-type="property">Pearl Santorini</button>
+        <button class="filter-btn" data-filter="kyoto" data-filter-type="property">Pearl Kyoto</button>
+        <button class="filter-btn" data-filter="marrakech" data-filter-type="property">Pearl Marrakech</button>
+        <button class="filter-btn" data-filter="maldives" data-filter-type="property">Pearl Maldives</button>
+        <button class="filter-btn" data-filter="patagonia" data-filter-type="property">Pearl Patagonia</button>
+        <button class="filter-btn" data-filter="amalfi" data-filter-type="property">Pearl Amalfi</button>
+        <button class="filter-btn" data-filter="capetown" data-filter-type="property">Pearl Cape Town</button>
+        <button class="filter-btn" data-filter="rajasthan" data-filter-type="property">Pearl Rajasthan</button>
+        <button class="filter-btn" data-filter="tulum" data-filter-type="property">Pearl Tulum</button>
+      </div>
+      <!-- Category Filter -->
+      <div class="filter-bar">
+        <span style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-ocean); margin-right: 1rem;">Category:</span>
+        <button class="filter-btn active" data-filter="all" data-filter-type="category">All</button>
+        <button class="filter-btn" data-filter="architecture" data-filter-type="category">Architecture</button>
+        <button class="filter-btn" data-filter="rooms" data-filter-type="category">Rooms & Suites</button>
+        <button class="filter-btn" data-filter="dining" data-filter-type="category">Dining</button>
+        <button class="filter-btn" data-filter="experiences" data-filter-type="category">Experiences</button>
+        <button class="filter-btn" data-filter="landscapes" data-filter-type="category">Landscapes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Grid -->
+  <section class="section" style="background-color: var(--color-pearl);">
+    <div class="container">
+      <div class="gallery-grid" data-gallery>
+        
+        <!-- Pearl Dubai (3) -->
+        <div class="gallery-item animate-on-scroll" data-property="dubai" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80" alt="Pearl Dubai exterior" data-caption="Pearl Dubai at golden hour" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Dubai</span>
+            <span class="gallery-category">Architecture</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="dubai" data-category="rooms">
+          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80" alt="Pearl Dubai suite" data-caption="Arabian Gulf Suite" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Dubai</span>
+            <span class="gallery-category">Rooms & Suites</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="dubai" data-category="experiences">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80" alt="Pearl Dubai pool" data-caption="Rooftop infinity pool overlooking the Gulf" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Dubai</span>
+            <span class="gallery-category">Experiences</span>
+          </div>
+        </div>
+        
+        <!-- Pearl Santorini (3) -->
+        <div class="gallery-item animate-on-scroll" data-property="santorini" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80" alt="Pearl Santorini view" data-caption="Caldera view from Pearl Santorini" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Santorini</span>
+            <span class="gallery-category">Architecture</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="santorini" data-category="rooms">
+          <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&q=80" alt="Pearl Santorini suite" data-caption="Carved into volcanic rock" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Santorini</span>
+            <span class="gallery-category">Rooms & Suites</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="santorini" data-category="dining">
+          <img src="https://images.unsplash.com/photo-1533106958155-d2d7069fbd94?w=800&q=80" alt="Pearl Santorini dining" data-caption="Dinner at Petra restaurant" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Santorini</span>
+            <span class="gallery-category">Dining</span>
+          </div>
+        </div>
+        
+        <!-- Pearl Kyoto (3) -->
+        <div class="gallery-item animate-on-scroll" data-property="kyoto" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80" alt="Pearl Kyoto bamboo" data-caption="The bamboo grove at dawn" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Kyoto</span>
+            <span class="gallery-category">Landscapes</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="kyoto" data-category="rooms">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80" alt="Pearl Kyoto tatami" data-caption="Traditional tatami suite" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Kyoto</span>
+            <span class="gallery-category">Rooms & Suites</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="kyoto" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80" alt="Pearl Kyoto garden" data-caption="The moss garden in autumn" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Kyoto</span>
+            <span class="gallery-category">Landscapes</span>
+          </div>
+        </div>
+        
+        <!-- Pearl Marrakech (3) -->
+        <div class="gallery-item animate-on-scroll" data-property="marrakech" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1597212720158-24b2bf5c2298?w=800&q=80" alt="Pearl Marrakech courtyard" data-caption="The central courtyard" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Marrakech</span>
+            <span class="gallery-category">Architecture</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="marrakech" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80" alt="Pearl Marrakech tiles" data-caption="Hand-cut zellige tilework" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Marrakech</span>
+            <span class="gallery-category">Architecture</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="marrakech" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80" alt="Pearl Marrakech view" data-caption="Atlas Mountains from the rooftop" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Marrakech</span>
+            <span class="gallery-category">Landscapes</span>
+          </div>
+        </div>
+        
+        <!-- Pearl Maldives (3) -->
+        <div class="gallery-item animate-on-scroll" data-property="maldives" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80" alt="Pearl Maldives aerial" data-caption="Overwater villas from above" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Maldives</span>
+            <span class="gallery-category">Architecture</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="maldives" data-category="dining">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Pearl Maldives underwater" data-caption="Below — underwater dining" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Maldives</span>
+            <span class="gallery-category">Dining</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="maldives" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&q=80" alt="Pearl Maldives sunset" data-caption="Sunset over Baa Atoll" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Maldives</span>
+            <span class="gallery-category">Landscapes</span>
+          </div>
+        </div>
+        
+        <!-- Pearl Patagonia (3) -->
+        <div class="gallery-item animate-on-scroll" data-property="patagonia" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1531761535209-180857e963b9?w=800&q=80" alt="Pearl Patagonia lodge" data-caption="The lodge beneath Torres del Paine" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Patagonia</span>
+            <span class="gallery-category">Architecture</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="patagonia" data-category="experiences">
+          <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=800&q=80" alt="Pearl Patagonia glacier" data-caption="Trekking on Grey Glacier" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Patagonia</span>
+            <span class="gallery-category">Experiences</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="patagonia" data-category="experiences">
+          <img src="https://images.unsplash.com/photo-1478827536114-da961b7f86d2?w=800&q=80" alt="Pearl Patagonia hot tub" data-caption="Wood-fired hot tub under Patagonian skies" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Patagonia</span>
+            <span class="gallery-category">Experiences</span>
+          </div>
+        </div>
+        
+        <!-- Pearl Amalfi (3) -->
+        <div class="gallery-item animate-on-scroll" data-property="amalfi" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=800&q=80" alt="Pearl Amalfi exterior" data-caption="Pearl Amalfi from the coast" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Amalfi</span>
+            <span class="gallery-category">Architecture</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="amalfi" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=800&q=80" alt="Pearl Amalfi lemons" data-caption="The Ravello lemon groves" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Amalfi</span>
+            <span class="gallery-category">Landscapes</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="amalfi" data-category="experiences">
+          <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&q=80" alt="Pearl Amalfi pool" data-caption="Infinity pool meeting the Mediterranean" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Amalfi</span>
+            <span class="gallery-category">Experiences</span>
+          </div>
+        </div>
+        
+        <!-- Pearl Cape Town (3) -->
+        <div class="gallery-item animate-on-scroll" data-property="capetown" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=800&q=80" alt="Pearl Cape Town building" data-caption="Pearl Cape Town with Table Mountain" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Cape Town</span>
+            <span class="gallery-category">Architecture</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="capetown" data-category="rooms">
+          <img src="https://images.unsplash.com/photo-1576485290814-1a72aa7e8baf?w=800&q=80" alt="Pearl Cape Town interior" data-caption="Suite with Ndebele textiles" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Cape Town</span>
+            <span class="gallery-category">Rooms & Suites</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="capetown" data-category="dining">
+          <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" alt="Pearl Cape Town bar" data-caption="Sundowners at the rooftop bar" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Cape Town</span>
+            <span class="gallery-category">Dining</span>
+          </div>
+        </div>
+        
+        <!-- Pearl Rajasthan (3) -->
+        <div class="gallery-item animate-on-scroll" data-property="rajasthan" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80" alt="Pearl Rajasthan palace" data-caption="The palace on Lake Pichola" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Rajasthan</span>
+            <span class="gallery-category">Architecture</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="rajasthan" data-category="rooms">
+          <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80" alt="Pearl Rajasthan room" data-caption="The Sheesh Mahal suite" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Rajasthan</span>
+            <span class="gallery-category">Rooms & Suites</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="rajasthan" data-category="experiences">
+          <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80" alt="Pearl Rajasthan boat" data-caption="Evening boat cruise with live sitar" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Rajasthan</span>
+            <span class="gallery-category">Experiences</span>
+          </div>
+        </div>
+        
+        <!-- Pearl Tulum (3) -->
+        <div class="gallery-item animate-on-scroll" data-property="tulum" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=800&q=80" alt="Pearl Tulum villa" data-caption="Jungle villa at Pearl Tulum" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Tulum</span>
+            <span class="gallery-category">Architecture</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="tulum" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80" alt="Pearl Tulum cenote" data-caption="The private cenote" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Tulum</span>
+            <span class="gallery-category">Landscapes</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item animate-on-scroll" data-property="tulum" data-category="experiences">
+          <img src="https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?w=800&q=80" alt="Pearl Tulum beach" data-caption="Barefoot luxury on the Caribbean" data-lightbox>
+          <div class="gallery-overlay">
+            <span class="gallery-property">Pearl Tulum</span>
+            <span class="gallery-category">Experiences</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>PEARL</h3>
+          <p>Where the world feels like home. Experience luxury across 10 exceptional properties on 4 continents.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="destinations.html#pearl-dubai">Pearl Dubai</a></li>
+            <li><a href="destinations.html#pearl-santorini">Pearl Santorini</a></li>
+            <li><a href="destinations.html#pearl-kyoto">Pearl Kyoto</a></li>
+            <li><a href="destinations.html#pearl-marrakech">Pearl Marrakech</a></li>
+            <li><a href="destinations.html#pearl-maldives">Pearl Maldives</a></li>
+            <li><a href="destinations.html#pearl-patagonia">Pearl Patagonia</a></li>
+            <li><a href="destinations.html#pearl-amalfi">Pearl Amalfi</a></li>
+            <li><a href="destinations.html#pearl-capetown">Pearl Cape Town</a></li>
+            <li><a href="destinations.html#pearl-rajasthan">Pearl Rajasthan</a></li>
+            <li><a href="destinations.html#pearl-tulum">Pearl Tulum</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Guest Services</h4>
+          <ul>
+            <li><a href="pearl-circle.html">Pearl Circle</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Gallery</h4>
+          <ul>
+            <li><a href="gallery.html">View Gallery</a></li>
+          </ul>
+          <h4 style="margin-top: var(--space-md);">Stay Connected</h4>
+          <p style="font-size: 0.875rem; opacity: 0.7; margin-bottom: 1rem;">Receive Pearl Perspectives — our curated journal of travel stories, design insights, and exclusive offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-success">Thank you for subscribing.</p>
+          <p class="newsletter-error"></p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2024 Pearl Group Hotels & Resorts. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Lightbox -->
+  <div class="lightbox" id="gallery-lightbox">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous">‹</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next">›</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-image">
+      <div class="lightbox-caption">
+        <p class="lightbox-property"></p>
+        <p class="lightbox-text"></p>
+      </div>
+      <div class="lightbox-counter"></div>
+    </div>
+  </div>
+  
+  <!-- Additional Styles -->
+  <style>
+    .filter-bar-container {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    
+    .filter-bar .filter-btn {
+      font-size: 0.6875rem;
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+    }
+    
+    @media (max-width: 1024px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .gallery-item {
+      position: relative;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    
+    .gallery-item.hidden {
+      display: none;
+    }
+    
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: var(--space-md);
+      background: linear-gradient(to top, rgba(13, 13, 13, 0.9), transparent);
+      opacity: 0;
+      transition: opacity var(--transition-base);
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+    
+    .gallery-property {
+      font-family: var(--font-serif);
+      font-size: 1.125rem;
+      color: var(--color-pearl);
+    }
+    
+    .gallery-category {
+      font-size: 0.625rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-champagne);
+    }
+    
+    /* Lightbox enhancements */
+    .lightbox-caption {
+      position: absolute;
+      bottom: var(--space-lg);
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: var(--color-pearl);
+    }
+    
+    .lightbox-caption .lightbox-property {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .lightbox-caption .lightbox-text {
+      font-size: 0.875rem;
+      opacity: 0.8;
+    }
+    
+    .lightbox-counter {
+      position: absolute;
+      top: var(--space-md);
+      right: var(--space-md);
+      font-size: 0.75rem;
+      color: var(--color-pearl);
+      opacity: 0.7;
+    }
+  </style>
+  
+  <!-- Gallery Filter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Dual filter system
+      let activeProperty = 'all';
+      let activeCategory = 'all';
+      
+      const propertyButtons = document.querySelectorAll('[data-filter-type="property"]');
+      const categoryButtons = document.querySelectorAll('[data-filter-type="category"]');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      
+      function filterGallery() {
+        galleryItems.forEach(item => {
+          const property = item.dataset.property;
+          const category = item.dataset.category;
+          
+          const propertyMatch = activeProperty === 'all' || property === activeProperty;
+          const categoryMatch = activeCategory === 'all' || category === activeCategory;
+          
+          if (propertyMatch && categoryMatch) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      }
+      
+      propertyButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          propertyButtons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          activeProperty = this.dataset.filter;
+          filterGallery();
+        });
+      });
+      
+      categoryButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          categoryButtons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          activeCategory = this.dataset.filter;
+          filterGallery();
+        });
+      });
+      
+      // Lightbox functionality
+      const lightbox = document.getElementById('gallery-lightbox');
+      const lightboxImage = lightbox.querySelector('.lightbox-image');
+      const lightboxProperty = lightbox.querySelector('.lightbox-property');
+      const lightboxText = lightbox.querySelector('.lightbox-text');
+      const lightboxCounter = lightbox.querySelector('.lightbox-counter');
+      const lightboxClose = lightbox.querySelector('.lightbox-close');
+      const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+      const lightboxNext = lightbox.querySelector('.lightbox-next');
+      
+      let currentIndex = 0;
+      let visibleImages = [];
+      
+      function updateVisibleImages() {
+        visibleImages = Array.from(galleryItems).filter(item => !item.classList.contains('hidden'));
+      }
+      
+      function openLightbox(index) {
+        updateVisibleImages();
+        currentIndex = index;
+        
+        const item = visibleImages[currentIndex];
+        const img = item.querySelector('img');
+        
+        lightboxImage.src = img.src.replace('w=800', 'w=1600');
+        lightboxProperty.textContent = item.querySelector('.gallery-property').textContent;
+        lightboxText.textContent = img.dataset.caption;
+        lightboxCounter.textContent = `${currentIndex + 1} / ${visibleImages.length}`;
+        
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      
+      function navigate(direction) {
+        currentIndex = (currentIndex + direction + visibleImages.length) % visibleImages.length;
+        
+        const item = visibleImages[currentIndex];
+        const img = item.querySelector('img');
+        
+        lightboxImage.src = img.src.replace('w=800', 'w=1600');
+        lightboxProperty.textContent = item.querySelector('.gallery-property').textContent;
+        lightboxText.textContent = img.dataset.caption;
+        lightboxCounter.textContent = `${currentIndex + 1} / ${visibleImages.length}`;
+      }
+      
+      // Click handlers for gallery images
+      galleryItems.forEach((item, index) => {
+        item.addEventListener('click', function() {
+          updateVisibleImages();
+          const visibleIndex = visibleImages.indexOf(item);
+          openLightbox(visibleIndex);
+        });
+      });
+      
+      // Lightbox controls
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxPrev.addEventListener('click', () => navigate(-1));
+      lightboxNext.addEventListener('click', () => navigate(1));
+      
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) closeLightbox();
+      });
+      
+      // Keyboard navigation
+      document.addEventListener('keydown', function(e) {
+        if (!lightbox.classList.contains('active')) return;
+        
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') navigate(-1);
+        if (e.key === 'ArrowRight') navigate(1);
+      });
+    });
+  </script>
+  
+  <script src="main.js"></script>
+</body>
+</html>
